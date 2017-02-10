@@ -40,7 +40,6 @@ def install(unity_path):
     shutil.copy(os.path.join(target_path, "UnusedBytecodeStripper2.exe.mdb"), os.path.join(path_original, "UnusedBytecodeStripper2.exe.mdb"))
     shutil.copy(os.path.join(target_path, "Mono.Cecil.dll"), os.path.join(path_original, "Mono.Cecil.dll"))
     shutil.copy(os.path.join(target_path, "Mono.Cecil.Mdb.dll"), os.path.join(path_original, "Mono.Cecil.Mdb.dll"))
-    shutil.copy(os.path.join(target_path, "Mono.Cecil.Rocks.dll"), os.path.join(path_original, "Mono.Cecil.Rocks.dll"))
 
 
     shutil.copy("IProcessDll.dll", os.path.join(target_path, "IProcessDll.dll"))
@@ -52,7 +51,6 @@ def install(unity_path):
 
     shutil.copy("Mono.Cecil.dll", os.path.join(target_path, "Mono.Cecil.dll"))
     shutil.copy("Mono.Cecil.Mdb.dll", os.path.join(target_path, "Mono.Cecil.Mdb.dll"))
-    shutil.copy("Mono.Cecil.Rocks.dll", os.path.join(target_path, "Mono.Cecil.Rocks.dll"))
 
     # stripper chain will call UnusedBytecodeStripper2.org.exe at end
     shutil.move(os.path.join(target_path, "UnusedBytecodeStripper2.exe"),
